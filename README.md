@@ -66,7 +66,7 @@ Wiring looks complex: it's not. It's the switches and gimbals wired to the HID j
 | ![Kycon socket](https://github.com/undiplomatic/RubyController7in/blob/main/Images/KPJXDCSocket.png) ![DIN Connector](https://github.com/undiplomatic/RubyController7in/blob/main/Images/DINConnector.png)| DC Socket | Kycon KPJX Straight DC Socket, part KPJX-PM-4S. These are not cheap, but are the only 4 pin DC plugs I can find. Male end is more common, often called a DIN plug even though not DIN compatible. |
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
-| | Fans | Two 4010 5v fans |
+| | Fans x2 | 4010 5v fans. Wire to second voltage regulator for safety. |
 | | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing +/- 1mm. Typically marked "6a 125v/3a 240v". |
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
@@ -81,7 +81,7 @@ Wiring looks complex: it's not. It's the switches and gimbals wired to the HID j
 | | 1.25mm Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
 | | 18650 Li-Ion Cells | |
 
-... and other misc items: thermal adhesive tape, and probably more things I've forgotten about.
+... and other misc items: thermal adhesive tape, resistors for rotary switch and three position switches, and probably more things I've forgotten about.
 
 ## Charging Lead
 
@@ -98,7 +98,7 @@ DC PLUG PIN:(1)         (2)         (3)         (4)
 
 ![Charge Lead](https://github.com/undiplomatic/RubyController7in/blob/main/Images/ChargeLead.jpg)
 
-## USB and hall sensors
+## USB and hall sensor wiring
 
 * __Tightly__ twist the USB data wires and keep them as short as possible
 * __Lightly__ twist the hall sensor wires and keep them as short as possible
@@ -118,3 +118,11 @@ SWITCH PIN: (GND)   (Analogue Pin)    (3.3v)
                 [#### SWITCH BODY ####]
 
 ```
+
+## Rotary switch
+
+* Small resistors between the terminals create a "voltage ladder"
+* The total resistance should sum to ~10 kOhms
+* Wire to an analogue pin on the Joystick HID Blue Pill STM32 controller
+
+Ardupilot flight mode channel is a pain as the switch boundaries are not configurable, so each notch on the switch may not move the flightmode by one setting. Thankfully, FreeJoy *axes curves* can fix this. The image shows how to configure a six position switch.
