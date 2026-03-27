@@ -48,15 +48,15 @@
 | :--- | :--- | :--- |
 | ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Screen.jpg) | Screen | Generic Raspberry Pi HDMI display, 7 inch |
 | | SoC Computer | Raspberry Pi or Radxa Rock |
-| | Gimbals | Radiomaster AG01 gimbals |
-| | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules |
-| | BEC or Voltage Regulators | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance. I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. |
+| | Gimbals | Radiomaster AG01 gimbals, hall sensor recommended. CNC ones are expensive, plastic are cheap. |
+| | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules, used by RubyFPV as transceivers. |
+| | BEC or Voltage Regulator | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance so long as it really is only 5.2v. I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. BECs are just voltage regulators designed for model aircraft, doesnt need to be a BEC when used in a controller. |
 | | HDMI Cable | 15cm left plug and straight plug other end |
 | | Battery holder | Three 18650 cell holder |
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
 | | Fans | Two 4010 5v fans |
-| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing |
+| | Slide Switch | Switch for main power, 27.5mm +/- 1.0mm hole spacing. Often labelled as 125v 6a / 240v 3a |
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
@@ -67,5 +67,6 @@
 | | M2 brass inserts | |
 | | USB plugs | Self solder type, male and one female |
 | | Silicone wire | 30 AWG |
+| | 1.25 Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
 
 ... and other misc items: thermal adhesive tape
