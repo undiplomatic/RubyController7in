@@ -28,8 +28,8 @@ This 3D-printed controller includes features missing on commercial systems, such
 | Radiomaster AG1 Hall Sensor Gimbals | Beware: the hall sensor wires on Radiomaster are mis-coloured, remove wires and check polarity printed on sensors | ✅ |
 | Built in open source patch antennas | Low profile, low cost, perfect radiation beam for long range | ✅ |
 | Diversity omni antennas | V shaped antennas to reduce blind spots | ✅ |
-| RTL EU2 Wifi chips with heat sinks |  | ✅ |
-| Active cooling |  | ✅ |
+| RTL EU2 Wifi chips with heat sinks | Transceivers mount on integrated heat sinks | ✅ |
+| Active cooling | Two large fans | ✅ |
 | Rotary switch | Rotary switches support large number of positions, suitable for flight modes on Ardupilot etc | ✅ |
 | Power switch guard | Knock guard protects against accidental on/off | ✅ |
 | Mini nav stick | Used to navigate through RubyFPV menus. Spare nav stick for screen control. | ✅ |
@@ -43,6 +43,7 @@ This 3D-printed controller includes features missing on commercial systems, such
 >STL files in multiple parts to fit typical 3D printers.
 
 ![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RearView.jpg)
+Wiring looks complex: it's not. It's the switches and gimbals wired to the HID joystick controller that create the illusion.
 
 >[!NOTE]
 >The RTL chips get hot. Heat sinks are glued into the board, and the RTL modules are attached to the sinks using thermal adhesive tape.
@@ -66,7 +67,7 @@ This 3D-printed controller includes features missing on commercial systems, such
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
 | | Fans | Two 4010 5v fans |
-| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing +/- 1mm |
+| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing +/- 1mm. Typically marked "6a 125v/3a 240v". |
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
@@ -80,7 +81,7 @@ This 3D-printed controller includes features missing on commercial systems, such
 | | 1.25mm Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
 | | 18650 Li-Ion Cells | |
 
-... and other misc items: thermal adhesive tape
+... and other misc items: thermal adhesive tape, and probably more things I've forgotten about.
 
 ## Charging Lead
 
@@ -96,3 +97,9 @@ DC PLUG PIN:(1)         (2)         (3)         (4)
 ```
 
 ![Charge Lead](https://github.com/undiplomatic/RubyController7in/blob/main/Images/ChargeLead.jpg)
+
+## USB and hall sensors
+
+* __Tightly__ twist the USB data wires and keep them as short as possible
+* __Lightly__ twist the hall sensor wires and keep them as short as possible
+* WiFi transceivers should take power direct from the voltage regulators. USB power is insufficient at high outputs.
