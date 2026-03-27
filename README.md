@@ -27,3 +27,7 @@
 | External USB port | Used to update firmware | ✅ |
 | High brightness outdoor screen | 2000 nit screen coming soon | ⏳ |
 | Ergonomics | Improved ergonomics coming soon | ⏳ |
+
+>[!NOTE]
+>CAD Files done in FreeCAD for easy updating.
+>STL files in multiple parts to fit typical 3D printers.
