@@ -1,7 +1,7 @@
 # Open Source 7" FPV Controller with Display for RubyFPV
 
 >[!NOTE]
->This is not a production ready controller, it may contain design faults. I am not an engineer and cannot vouch for its safety.
+>This is not a production ready controller, it may contain design faults. I am *not an engineer* and cannot vouch for its safety.
 >Ergonomics are currently very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
 >Updates to the controller will depend on demand. If there's demand, I'll update it. If no demand, you take it as it is.
 
@@ -58,7 +58,7 @@
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
 | | Fans | Two 4010 5v fans |
-| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing |
+| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing +/- 1mm |
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
@@ -70,5 +70,11 @@
 | ![USB Plug](https://github.com/undiplomatic/RubyController7in/blob/main/Images/USBPlug.png) | USB plugs | Self solder type, male and one female |
 | | Silicone wire | 30 AWG |
 | | 1.25mm Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
+| | 18650 Li-Ion Cells | |
 
 ... and other misc items: thermal adhesive tape
+
+## Charging Lead
+
+The controller uses a 4-pin DC plug as a balance lead, with pins wired to each junction of the three battery cells. Due to space constraints, there is no dedicated main power socket. Since most chargers do not support charging  via the balance lead alone, you can use a breakout lead (an XT30 plug connected to the two outer junctions). While this is electrically the same as a standard charging setup, the power is "tapped" from  balance wires, therefore, you must charge at a low current to prevent issues.
+![Charge Lead](https://github.com/undiplomatic/RubyController7in/blob/main/Images/ChargeLead.jpg)
