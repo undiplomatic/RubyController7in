@@ -1,14 +1,22 @@
 # Open Source 7" FPV Controller with Display for RubyFPV
 
 >[!NOTE]
->This is not a production ready controller, it may contain design faults. I am *not an engineer* and cannot vouch for its safety.
->Ergonomics are currently very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
+>This is not a production ready controller, it may contain design faults. I am **not an engineer** and cannot vouch for its safety.
+>Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
 >Updates to the controller will depend on demand. If there's demand, I'll update it. If no demand, you take it as it is.
 
 >[!TIP]
 >Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
 
 ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
+
+## Why RubyFPV
+As of late 2025, RubyFPV has matured into a stable digital FPV and link system. Users report it operates flawlessly without stutters or break-ups. In my testing, the system achieves approximately 75% of the range of DJI O4. As of early 2026, the project is working on integrating specialist FPV modules which will further improve the link. These upcoming modules will provide a more stable link, more range, and lower latency across multiple frequencies, including traditional 5.8GHz and low-frequency bands for long range.
+
+Open source FPV eliminates the "vendor lock-in" and privacy concerns associated with closed systems, for example, DJI has been shown to have "back doors" in their hardware and often restricts certain features for non-DJI drones using their air units. Because RubyFPV is open, it can be fully customised for industrial, academic, or developer applications. It also handles video, telemetry, and control signals over a single link and supports advanced features like signal relaying and Antenna Trackers.
+
+## Why This Controller
+This 3D-printed controller includes features missing on commercial systems, such as a six-position switch specifically for Ardupilot flight modes, along with a high number of assignable switches for complex configurations. Because RubyFPV supports multiple concurrent links across different frequencies, this controller has the internal space to house multiple transceiver modules simultaneously.
 
 ## Features
 | Feature | Description | |
