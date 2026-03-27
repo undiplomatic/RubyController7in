@@ -78,4 +78,13 @@
 
 The controller uses a 4-pin DC plug as a balance lead, with pins wired to each junction of the three battery cells. Due to space constraints, there is no dedicated main power socket. Since most chargers do not support charging  via the balance lead alone, you can use a breakout lead (an XT30 plug connected to the two outer junctions). While this is electrically the same as a standard charging setup, the power is "tapped" from  balance wires, therefore, you must charge at a low current to prevent issues.
 
+```
+DC PLUG PIN:(1)         (2)         (3)         (4)
+             |           |           |           |
+             +--[Cell1]--+--[Cell2]--+--[Cell3]--+
+             |  (3.7V)      (7.4V)      (11.1V)  |
+             |                                   |
+ XT30:  NEG (-)                             POS (+)
+```
+
 ![Charge Lead](https://github.com/undiplomatic/RubyController7in/blob/main/Images/ChargeLead.jpg)
