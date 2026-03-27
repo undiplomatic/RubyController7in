@@ -126,3 +126,5 @@ SWITCH PIN: (GND)   (Analogue Pin)    (3.3v)
 * Wire to an analogue pin on the Joystick HID Blue Pill STM32 controller
 
 Ardupilot flight mode channel is a pain as the switch boundaries are not configurable, so each notch on the switch may not move the flightmode by one setting. Thankfully, FreeJoy *axes curves* can fix this. The image shows how to configure a six position switch.
+
+![Axes curve to fix switch boundaries in Ardupilot](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RotarySwitchAxesCurve.png)
