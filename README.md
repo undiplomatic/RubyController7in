@@ -39,11 +39,11 @@ This 3D-printed controller includes features missing on commercial systems, such
 | Ergonomics | Improved ergonomics coming soon | ⏳ |
 
 >[!NOTE]
->CAD Files done in FreeCAD for easy updating.
+>Files created in FreeCAD for easy updating.
 >STL files in multiple parts to fit typical 3D printers.
 
 ![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RearView.jpg)
-Wiring looks complex: it's not. It's the switches and gimbals wired to the HID joystick controller that create the illusion.
+Wiring looks complex: it's not, the switches and gimbal wiring that create that illusion.
 
 >[!NOTE]
 >The RTL chips get hot. Heat sinks are glued into the board, and the RTL modules are attached to the sinks using thermal adhesive tape.
@@ -55,7 +55,7 @@ Wiring looks complex: it's not. It's the switches and gimbals wired to the HID j
 
 | | Part | Description |
 | :--- | :--- | :--- |
-| ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Screen.jpg) | Screen | Generic Raspberry Pi HDMI display, 7 inch |
+| ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Screen.jpg) | Screen | Generic Raspberry Pi HDMI display, 7 inch. Find this **exact** screen to ensure a fit. |
 | | SoC Computer | Raspberry Pi or Radxa Rock |
 | | Gimbals | Radiomaster AG01 gimbals |
 | | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules |
