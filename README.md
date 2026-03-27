@@ -8,7 +8,7 @@
 >[!TIP]
 >Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
 
-![Main View](images/MainView.jpg)
+![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
 
 ## Features
 | Feature | Description |
@@ -33,3 +33,11 @@
 >[!NOTE]
 >CAD Files done in FreeCAD for easy updating.
 >STL files in multiple parts to fit typical 3D printers.
+
+![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RearView.jpg)
+
+>[!NOTE]
+>The RTL chips get hot. Heat sinks are glued into the board, and the RTL modules are attached to the sinks using thermal adhesive tape.
+>The board you see creates two levels inside the controller. The bottom level houses the screen, wiring and gimbals. The top level houses the Radxa/Raspberry, batteries, HID joystick controller, and RTL modules.
+
+![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Level2Board.jpg)
