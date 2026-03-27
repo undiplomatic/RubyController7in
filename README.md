@@ -11,12 +11,12 @@
 ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
 
 ## Features
-| Feature | Description |
-| :--- | :--- |
-| 7 inch screen | Good size screen, reasonably prices | ✅ |
+| Feature | Description | |
+| :--- | :--- | :--- |
+| 7 inch screen | Good size screen, reasonably priced | ✅ |
 | Screen and controller in one | No need for a separate control link such as ELRS | ✅ |
 | Raspberry Pi / Radxa Rock based |  | ✅ |
-| Open source joystick controller | Uses highly configurable FreeJoy HID controller, allowing large number of switch and pots | ✅ |
+| Open source joystick controller | Uses highly configurable FreeJoy HID controller, allowing large number of switches and pots | ✅ |
 | Radiomaster AG1 Hall Sensor Gimbals | Beware: the hall sensor wires on Radiomaster are mis-coloured, remove wires and check polarity printed on sensors | ✅ |
 | Built in open source patch antennas | Low profile, low cost, perfect radiation beam for long range | ✅ |
 | Diversity omni antennas | V shaped antennas to reduce blind spots | ✅ |
@@ -41,3 +41,31 @@
 >The board you see creates two levels inside the controller. The bottom level houses the screen, wiring and gimbals. The top level houses the Radxa/Raspberry, batteries, HID joystick controller, and RTL modules.
 
 ![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Level2Board.jpg)
+
+## Part List
+
+| | Part | Description |
+| :--- | :--- | :--- |
+| ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Screen.jpg) | Screen | Generic Raspberry Pi HDMI display, 7 inch |
+| | SoC Computer | Raspberry Pi or Radxa Rock |
+| | Gimbals | Radiomaster AG01 gimbals |
+| | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules |
+| | BEC or Voltage Regulators | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance. I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. |
+| | HDMI Cable | 15cm left plug and straight plug other end |
+| | Battery holder | Three 18650 cell holder |
+| | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
+| | Omni Antennas x2 | SMA Antennas |
+| | Fans | Two 4010 5v fans |
+| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing |
+| | Toggle switches | MTS series generic toggle switches |
+| | Rotary switch | SR16 |
+| | Heat sinks | 30x30mm alu |
+| | SMA U.FL Connectors | Two male SMAs for the omni antennas and two females for the patch antennas |
+| | Mini Nav switch | Five Way Switch SMD DIP 6Pin Multi Directional Mobile Navigation Switch Touch Reset Key 7.5x7.5 |
+| | LCD Display | Optional 0.96" I2C OLED Display Module |
+| | LEDs | 6mm hole, 5v. I suggest using 12/24v LED for the power LED to keep brightness low. |
+| | M2 brass inserts | |
+| | USB plugs | Self solder type, male and one female |
+| | Silicone wire | 30 AWG |
+
+... and other misc items: thermal adhesive tape
