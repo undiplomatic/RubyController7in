@@ -51,7 +51,7 @@
 | | Gimbals | Radiomaster AG01 gimbals |
 | | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules |
 | | BEC or Voltage Regulators | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance. I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. |
-| | HDMI Cable | 15cm left plug and straight plug other end |
+| ![HMDI Cable Left-Straight 15cm](https://github.com/undiplomatic/RubyController7in/blob/main/Images/HDMILeftStraight.png) | HDMI Cable | 15cm left plug and straight plug other end |
 | | Battery holder | Three 18650 cell holder |
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
@@ -61,11 +61,12 @@
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
 | | SMA U.FL Connectors | Two male SMAs for the omni antennas and two females for the patch antennas |
-| | Mini Nav switch | Five Way Switch SMD DIP 6Pin Multi Directional Mobile Navigation Switch Touch Reset Key 7.5x7.5 |
+| ![Mini Nav Switch](https://github.com/undiplomatic/RubyController7in/blob/main/Images/NavStick.png)| Mini Nav switch | Five Way Switch SMD DIP 6Pin Multi Directional Mobile Navigation Switch Touch Reset Key 7.5x7.5 |
 | | LCD Display | Optional 0.96" I2C OLED Display Module |
 | | LEDs | 6mm hole, 5v. I suggest using 12/24v LED for the power LED to keep brightness low. |
 | | M2 brass inserts | |
-| | USB plugs | Self solder type, male and one female |
+| ![USB Plug](https://github.com/undiplomatic/RubyController7in/blob/main/Images/USBPlug.png) | USB plugs | Self solder type, male and one female |
 | | Silicone wire | 30 AWG |
+| | 1.25mm Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
 
 ... and other misc items: thermal adhesive tape
