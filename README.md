@@ -8,6 +8,8 @@
 >[!TIP]
 >Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
 
+![Main View](images/MainView.jpg)
+
 ## Features
 | Feature | Description |
 | :--- | :--- |
