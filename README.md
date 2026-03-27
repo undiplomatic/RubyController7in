@@ -1,14 +1,14 @@
-#Open Source 7" FPV Controller with Display for RubyFPV
+# Open Source 7" FPV Controller with Display for RubyFPV
 
-[!NOTE]
-This is not a production ready controller, it may contain design faults. I am not an engineer and cannot vouch for its safety.
-Ergonomics are currently very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
-Updates to the controller will depend on demand. If there's demand, I'll update it. If no demand, you take it as it is.
+>[!NOTE]
+>This is not a production ready controller, it may contain design faults. I am not an engineer and cannot vouch for its safety.
+>Ergonomics are currently very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
+>Updates to the controller will depend on demand. If there's demand, I'll update it. If no demand, you take it as it is.
 
-[!TIP]
-Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
+>[!TIP]
+>Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
 
-##Features
+## Features
 | Feature | Description |
 | :--- | :--- |
 | 7 inch screen | Good size screen, reasonably prices | ✅ |
