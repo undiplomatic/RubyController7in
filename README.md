@@ -22,7 +22,7 @@
 | Diversity omni antennas | V shaped antennas to reduce blind spots | ✅ |
 | RTL EU2 Wifi chips with heat sinks |  | ✅ |
 | Active cooling |  | ✅ |
-| Rotary switch | Rotary switches support large number of positions, suitable for flight modes on Ardupilot etc | ⏳ |
+| Rotary switch | Rotary switches support large number of positions, suitable for flight modes on Ardupilot etc | ✅ |
 | Power switch guard | Knock guard protects against accidental on/off | ✅ |
 | Mini nav stick | Used to navigate through RubyFPV menus. Spare nav stick for screen control. | ✅ |
 | LCD Screen | Used for aux display on RubyFPV | ✅ |
@@ -77,4 +77,5 @@
 ## Charging Lead
 
 The controller uses a 4-pin DC plug as a balance lead, with pins wired to each junction of the three battery cells. Due to space constraints, there is no dedicated main power socket. Since most chargers do not support charging  via the balance lead alone, you can use a breakout lead (an XT30 plug connected to the two outer junctions). While this is electrically the same as a standard charging setup, the power is "tapped" from  balance wires, therefore, you must charge at a low current to prevent issues.
+
 ![Charge Lead](https://github.com/undiplomatic/RubyController7in/blob/main/Images/ChargeLead.jpg)
