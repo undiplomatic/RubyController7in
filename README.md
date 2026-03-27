@@ -103,3 +103,18 @@ DC PLUG PIN:(1)         (2)         (3)         (4)
 * __Tightly__ twist the USB data wires and keep them as short as possible
 * __Lightly__ twist the hall sensor wires and keep them as short as possible
 * WiFi transceivers should take power direct from the voltage regulators. USB power is insufficient at high outputs.
+
+## Three position switches
+
+* These should be wired to an analogue terminal on the Joystick Blue Pill STM32 controller.
+* Two 5k resistors from centre terminal to outer terminals.
+* Power and Ground from the joystick controller to the switch outer terminals.
+* Centre switch terminal to analogue pin
+
+```
+SWITCH PIN: (GND)   (Analogue Pin)    (3.3v)
+                |          |          | 
+                +---[R1]---+---[R1]---+
+                [#### SWITCH BODY ####]
+
+```
