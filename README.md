@@ -3,7 +3,6 @@
 >[!NOTE]
 >This is not a production ready controller, it may contain design faults. I am **not an engineer** and cannot vouch for its safety.
 >Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
->Updates to the controller will depend on demand. If there's demand, I'll update it. If no demand, you take it as it is.
 
 >[!TIP]
 >Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
@@ -11,9 +10,9 @@
 ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
 
 ## Why RubyFPV
-As of late 2025, RubyFPV has matured into a stable digital FPV and link system. Users report it operates flawlessly without stutters or break-ups. In my home testing, Ruby achieves approximately 75% of the range of DJI O4. As of early 2026, the project is working on integrating specialist FPV modules which will further improve the link. These upcoming modules will provide a more stable link, more range, and lower latency across multiple frequencies. They will support multiple frequency bands, a first for digital FPV, including traditional 5.8GHz and low-frequency bands for long range.
+Around 2025 RubyFPV matured into a stable digital FPV and link system. Users report it operates flawlessly without stutters or break-ups. In my home testing, Ruby achieves approximately 75% of the range of DJI O4. As of early 2026, RubyFPV is working on integrating specialist FPV modules which will further improve the link. These upcoming modules will provide an even more stable link, more range, and lower latency. They will support multiple frequency bands, a first for digital FPV, including traditional 5.8GHz and low-frequency bands for long range.
 
-Open source FPV eliminates the "vendor lock-in" and privacy concerns associated with closed systems. For example, DJI has been shown to have back doors in their hardware, require activation, and restrict certain features for non-DJI drones. Because RubyFPV is open, it can be fully customised for industrial, academic, or developer applications. It also handles video, telemetry, and control signals over a single link and supports advanced features like signal relaying and antenna trackers.
+Open source FPV eliminates vendor lock-in, privacy concerns, and lack of feedback associated with closed systems. For example, DJI has been shown to have back doors in their hardware (forcing changes without an update in the UK), require activation, restrict certain features for non-DJI drones (eg headtracking), and leave certain features in legacy mode (eg SBUS). Because RubyFPV is open, it can be fully customised for industrial, academic, or developer applications. It also handles video, telemetry, and control signals over a single link and supports advanced features like signal relaying and antenna trackers.
 
 ## Why This Controller
 This 3D-printed controller includes features missing on commercial systems, such as a six-position switch specifically for Ardupilot flight modes, along with a high number of assignable switches. Because RubyFPV supports multiple concurrent links across different frequencies, this controller has the internal space to house multiple transceiver modules simultaneously.
@@ -22,10 +21,10 @@ This 3D-printed controller includes features missing on commercial systems, such
 | Feature | Description | |
 | :--- | :--- | :--- |
 | 7 inch screen | Good size screen, reasonably priced | ✅ |
-| Screen and controller in one | No need for a separate control link such as ELRS | ✅ |
+| Combined Screen and Controller | No need for a separate control link such as ELRS | ✅ |
 | Raspberry Pi / Radxa Rock based |  | ✅ |
 | Open source joystick controller | Uses highly configurable FreeJoy HID controller, allowing large number of switches and pots | ✅ |
-| Radiomaster AG1 Hall Sensor Gimbals | Beware: the hall sensor wires on Radiomaster are mis-coloured, remove wires and check polarity printed on sensors | ✅ |
+| Radiomaster AG1 Hall Sensor Gimbals | Beware: the hall sensor wires on Radiomaster are mis-coloured, remove wires and check polarity printed on sensors. Available in CNC or low cost plastic. | ✅ |
 | Built in open source patch antennas | Low profile, low cost, perfect radiation beam for long range | ✅ |
 | Diversity omni antennas | V shaped antennas to reduce blind spots | ✅ |
 | RTL EU2 Wifi chips with heat sinks | Transceivers mount on integrated heat sinks | ✅ |
@@ -35,8 +34,8 @@ This 3D-printed controller includes features missing on commercial systems, such
 | Mini nav stick | Used to navigate through RubyFPV menus. Spare nav stick for screen control. | ✅ |
 | LCD Screen | Used for aux display on RubyFPV | ✅ |
 | External USB port | Used to update firmware | ✅ |
-| High brightness outdoor screen | 2000 nit screen coming soon | ⏳ |
-| Ergonomics | Improved ergonomics coming soon | ⏳ |
+| High brightness outdoor screen | 2000 nit screen coming later | ⏳ |
+| Ergonomics | Improved ergonomics coming later | ⏳ |
 
 >[!NOTE]
 >Files created in FreeCAD for easy updating.
