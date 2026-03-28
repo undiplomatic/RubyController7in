@@ -2,7 +2,7 @@
 
 >[!NOTE]
 >This is not a production ready controller, it may contain design faults. I am **not an engineer** and cannot vouch for its safety.
->Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes. HDMI would also be useful for use with goggle, but not yet sure how to implement that.
+>Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes. HDMI would also be useful for use with goggles, but not yet sure how to implement that.
 
 >[!TIP]
 >Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD so long as they support a Raspberry Pi. OpenIPC doesn't support control link at this time.
@@ -49,6 +49,10 @@ Wiring looks complex: it's not, the switches and gimbal wiring create that illus
 >The board you see creates two levels inside the controller. The bottom level houses the screen, wiring and gimbals. The top level houses the Radxa/Raspberry, batteries, HID joystick controller, and RTL modules.
 
 ![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Level2Board.jpg)
+
+## Radiomaster AG01 Gimbal Wiring Warning
+
+I found that the gimbals do not follow red/black wiring convention, with the red wire connected to the -ve and black wire to the +ve. The hall sensors have + and - markings on the PCB which appear correct.
 
 ## Part List
 
