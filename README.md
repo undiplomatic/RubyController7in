@@ -11,9 +11,9 @@
 ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
 
 ## Why RubyFPV
-As of late 2025, RubyFPV has matured into a stable digital FPV and link system. Users report it operates flawlessly without stutters or break-ups. In my home testing, Ruby achieves approximately 75% of the range of DJI O4. As of early 2026, the project is working on integrating specialist FPV modules which will further improve the link. These upcoming modules will provide a more stable link, more range, and lower latency across multiple frequencies. They will support multiple frequencies, a first for digital FPV, including traditional 5.8GHz and low-frequency bands for long range.
+As of late 2025, RubyFPV has matured into a stable digital FPV and link system. Users report it operates flawlessly without stutters or break-ups. In my home testing, Ruby achieves approximately 75% of the range of DJI O4. As of early 2026, the project is working on integrating specialist FPV modules which will further improve the link. These upcoming modules will provide a more stable link, more range, and lower latency across multiple frequencies. They will support multiple frequency bands, a first for digital FPV, including traditional 5.8GHz and low-frequency bands for long range.
 
-Open source FPV eliminates the "vendor lock-in" and privacy concerns associated with closed systems. For example, DJI has been shown to have back doors in their hardware, require activation, and restrict certain features for non-DJI drones using their air units. Because RubyFPV is open, it can be fully customised for industrial, academic, or developer applications. It also handles video, telemetry, and control signals over a single link and supports advanced features like signal relaying and antenna trackers.
+Open source FPV eliminates the "vendor lock-in" and privacy concerns associated with closed systems. For example, DJI has been shown to have back doors in their hardware, require activation, and restrict certain features for non-DJI drones. Because RubyFPV is open, it can be fully customised for industrial, academic, or developer applications. It also handles video, telemetry, and control signals over a single link and supports advanced features like signal relaying and antenna trackers.
 
 ## Why This Controller
 This 3D-printed controller includes features missing on commercial systems, such as a six-position switch specifically for Ardupilot flight modes, along with a high number of assignable switches. Because RubyFPV supports multiple concurrent links across different frequencies, this controller has the internal space to house multiple transceiver modules simultaneously.
@@ -43,7 +43,7 @@ This 3D-printed controller includes features missing on commercial systems, such
 >STL files in multiple parts to fit typical 3D printers.
 
 ![Rear View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RearView.jpg)
-Wiring looks complex: it's not, the switches and gimbal wiring that create that illusion.
+Wiring looks complex: it's not, the switches and gimbal wiring create that illusion.
 
 >[!NOTE]
 >The RTL chips get hot. Heat sinks are glued into the board, and the RTL modules are attached to the sinks using thermal adhesive tape.
@@ -58,12 +58,12 @@ Wiring looks complex: it's not, the switches and gimbal wiring that create that 
 | ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/Screen.jpg) | Screen | Generic Raspberry Pi HDMI display, 7 inch. Find this **exact** screen to ensure a fit. |
 | | SoC Computer | Raspberry Pi or Radxa Rock |
 | | Gimbals | Radiomaster AG01 gimbals |
-| | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules |
+| | RTL WiFi modules | Two RTL8812EU-CG Long Distance drone modules act as transceivers |
 | | Blue Pill STM32 | Low cost device that is flashed with FreeJoy. Solder all the hall sensors, switches, and pots to it. |
-| | BEC or Voltage Regulators | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance. I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. |
+| | BEC or Voltage Regulators | 5.0v. Beware, many are 5.2v which isn't ideal, though still in tolerance for some 5v devices. But check voltage is no higher! I run TWO regulators, one powers the SoC and one RTL WiFi module. The other powers the fans and second RTL module. This is recommended so that a short in the fans doesn't cause outage. |
 | ![HMDI Cable Left-Straight 15cm](https://github.com/undiplomatic/RubyController7in/blob/main/Images/HDMILeftStraight.png) | HDMI Cable | 15cm left plug and straight plug other end |
 | | Battery holder | Three 18650 cell holder |
-| ![Kycon socket](https://github.com/undiplomatic/RubyController7in/blob/main/Images/KPJXDCSocket.png) ![DIN Connector](https://github.com/undiplomatic/RubyController7in/blob/main/Images/DINConnector.png)| DC Socket | Kycon KPJX Straight DC Socket, part KPJX-PM-4S. These are not cheap, but are the only 4 pin DC plugs I can find. Male end is more common, often called a DIN plug even though not DIN compatible. |
+| ![Kycon socket](https://github.com/undiplomatic/RubyController7in/blob/main/Images/KPJXDCSocket.png) ![DIN Connector](https://github.com/undiplomatic/RubyController7in/blob/main/Images/DINConnector.png)| DC Socket | Kycon KPJX Straight DC Socket, part KPJX-PM-4S. These are not cheap, but are the only 4 pin DC plugs I can find. Male end is more common, often called a DIN plug even though not DIN compatible. Real DIN plugs have thinner pins and not suitable for DC charging. |
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
 | | Fans x2 | 4010 5v fans. Wire to second voltage regulator for safety. |
@@ -121,7 +121,7 @@ SWITCH PIN: (GND)   (Analogue Pin)    (3.3v)
 
 ## Rotary switch
 
-* Small resistors between the terminals create a "voltage ladder"
+* Small resistors between the terminals create a "voltage ladder" (Google it).
 * The total resistance should sum to ~10 kOhms
 * Wire to an analogue pin on the Joystick HID Blue Pill STM32 controller
 
