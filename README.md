@@ -67,7 +67,7 @@ Wiring looks complex: it's not, the switches and gimbal wiring create that illus
 | | Patch Antennas x2 | Triple feed patch antenna, low cost, open source design. You also need 50 ohm SMA terminals for them to work properly. |
 | | Omni Antennas x2 | SMA Antennas |
 | | Fans x2 | 4010 5v fans. Wire to second voltage regulator for safety. |
-| | Slide Switch | 3amp/6amp switch for main power, 27.5mm hole spacing +/- 1mm. Typically marked "6a 125v/3a 240v". |
+| | Slide Switch | 6amp switch for main power, 27.5mm hole spacing +/- 1mm. Typically marked "6a 125v/3a 240v". Product title often states 3 amps, but specs show 6 amp at lower voltages. |
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
