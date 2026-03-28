@@ -2,10 +2,10 @@
 
 >[!NOTE]
 >This is not a production ready controller, it may contain design faults. I am **not an engineer** and cannot vouch for its safety.
->Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes.
+>Ergonomics are still very basic. Uses a low cost screen, with plans to update for a high brightness outdoor screen once testing completes. HDMI would also be useful for use with goggle, but not yet sure how to implement that.
 
 >[!TIP]
->Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD.
+>Although designed for RubyFPV, no reason it cant be used for other systems such as OpenHD so long as they support a Raspberry Pi. OpenIPC doesn't support control link at this time.
 
 ![Main View](https://github.com/undiplomatic/RubyController7in/blob/main/Images/MainView.jpg)
 
@@ -70,11 +70,12 @@ Wiring looks complex: it's not, the switches and gimbal wiring create that illus
 | | Toggle switches | MTS series generic toggle switches |
 | | Rotary switch | SR16 |
 | | Heat sinks | 30x30mm alu |
-| | SMA U.FL Connectors | Two male SMAs for the omni antennas and two females for the patch antennas |
+| | SMA U.FL Connectors | Two male SMAs for the omni antennas and two females for the patch antennas. The other end should be IPEX or U.FL. I believe they are the same, one being a brand name. |
 | ![Mini Nav Switch](https://github.com/undiplomatic/RubyController7in/blob/main/Images/NavStick.png)| Mini Nav switch | Five Way Switch SMD DIP 6Pin Multi Directional Mobile Navigation Switch Touch Reset Key 7.5x7.5 |
 | | LCD Display | Optional 0.96" I2C OLED Display Module |
 | | LEDs | 6mm hole, 5v. I suggest using 12/24v LED for the power LED to keep brightness low. |
 | | M2 brass inserts | |
+| | Current/voltage sensor | INA219 I2C sensor. I found only the Ada Fruit was detected by my Radxa. Raspberry Pi should work with generic sensors. |
 | ![USB Plug](https://github.com/undiplomatic/RubyController7in/blob/main/Images/USBPlug.png) | USB plugs | Self solder type, male and one female |
 | | Silicone wire | 30 AWG |
 | | 1.25mm Connectors | Small, JST like connectors such as Molex PicoBlade or MX 1.25 |
@@ -120,10 +121,10 @@ SWITCH PIN: (GND)   (Analogue Pin)    (3.3v)
 
 ## Rotary switch
 
-* Small resistors between the terminals create a "voltage ladder" (Google it).
+* Solder small resistors between the terminals create a "voltage ladder" (Google "rotary switch voltage ladder").
 * The total resistance should sum to ~10 kOhms
-* Wire to an analogue pin on the Joystick HID Blue Pill STM32 controller
+* Wire to an analogue input on the Joystick HID Blue Pill STM32 controller
 
-Ardupilot flight mode channel is a pain as the switch boundaries are not configurable, so each notch on the switch may not move the flightmode by one setting. Thankfully, FreeJoy *axes curves* can fix this. The image shows how to configure a six position switch.
+Ardupilot flight mode channel is a pain as the switch boundaries are not configurable, so each notch on the switch may not move the flightmode by one setting. This is because Ardu doesn't use the first and last 10% of the band. Thankfully, FreeJoy *axes curves* can fix this. The image shows how to configure the curve for a six position switch: notice that the line starts at -80% and ends at 80%, which compresses the band into what Ardu expects.
 
 ![Axes curve to fix switch boundaries in Ardupilot](https://github.com/undiplomatic/RubyController7in/blob/main/Images/RotarySwitchAxesCurve.png)
